@@ -1,0 +1,19 @@
+﻿@model Post
+
+<h3>
+    Posted in
+    <span class="glyphicon glyphicon-bookmark" title="Category"></span>
+    <span class="label label-primary">
+        @Model.Category.Name
+    </span>
+    , with
+    <span class="glyphicon glyphicon-tags" title="Tags"></span>
+    @foreach (var posttag in Model.PostTags)
+    {
+        <span class="label label-info">
+            @posttag.Tag.Name
+        </span>
+    }
+    , on
+    @Model.LastModified
+</h3>

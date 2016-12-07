@@ -1,0 +1,11 @@
+﻿@model DetialVM
+
+@{ 
+    ViewData["Title"] = "Blog Post Detial";
+}
+
+<h1>@Model.Post.Title</h1>
+
+<hr />
+
+@Html.Partial("_UnderTitle", Model.Post)

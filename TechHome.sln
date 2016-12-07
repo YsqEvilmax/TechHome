@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D2D1EAD8-62A3-44CE-924E-C5077D8CE4CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A055DC5-3A9C-4C35-AB4E-8806E882B123}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TechHome", "src\TechHome\TechHome.xproj", "{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TechHome.Blog", "src\TechHome.Blog\TechHome.Blog.xproj", "{6CA2216F-E264-4C71-A0F2-8718A98B71DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4} = {AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TechHome.Comment", "src\TechHome.Comment\TechHome.Comment.xproj", "{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA2216F-E264-4C71-A0F2-8718A98B71DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA2216F-E264-4C71-A0F2-8718A98B71DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA2216F-E264-4C71-A0F2-8718A98B71DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA2216F-E264-4C71-A0F2-8718A98B71DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE13CAC5-7567-4F5A-9D2B-069BE77C35D4} = {D2D1EAD8-62A3-44CE-924E-C5077D8CE4CD}
+		{6CA2216F-E264-4C71-A0F2-8718A98B71DF} = {D2D1EAD8-62A3-44CE-924E-C5077D8CE4CD}
+		{91F4D6BF-0453-48E9-BB69-F9F7FF9C93B0} = {D2D1EAD8-62A3-44CE-924E-C5077D8CE4CD}
+	EndGlobalSection
+EndGlobal

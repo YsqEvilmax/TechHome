@@ -1,0 +1,18 @@
+﻿@model Post
+
+<div class="post-card">
+    <div class="container">
+        @Html.Partial("_UnderTitle", Model)
+        <div class="post-info">
+            <!--Heading-->
+            <div class="post-title">
+                <h2>@Html.ActionLink(Model.Title, "Detial", "Blog", new { id = Model.Id })</h2>
+            </div>
+
+            <!--Short Description-->
+            <div class="post-description">
+                @Html.Raw(Model.Description)
+            </div>
+        </div>
+    </div>
+</div>

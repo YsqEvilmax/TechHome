@@ -1,0 +1,16 @@
+﻿@model ListVM
+@{
+    ViewData["Title"] = "All the Latest";
+}
+
+<section id="blog-list">
+    <h1>@ViewData["Title"]</h1>
+    <hr/>
+    @foreach (var post in Model.Posts)
+    {
+        @Html.Partial("_PostCard", post)
+        <hr/>
+    }
+</section>
+
+
